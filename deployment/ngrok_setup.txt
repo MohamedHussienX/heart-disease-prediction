@@ -1,0 +1,47 @@
+=================================
+NGROK DEPLOYMENT - SIMPLE STEPS
+=================================
+
+1. DOWNLOAD NGROK
+   - Go to: ngrok.com/download
+   - Download for your computer
+   - Unzip the file
+
+2. GET YOUR FREE TOKEN
+   - Go to: ngrok.com/signup
+   - Create free account
+   - Copy your authtoken from dashboard
+
+3. SETUP NGROK (run in Command Prompt/Terminal):
+   cd Downloads  (or where you saved ngrok)
+   ngrok authtoken YOUR_TOKEN_HERE
+
+4. RUN YOUR APP (Window 1):
+   cd your-project-folder
+   streamlit run app.py
+
+5. START NGROK TUNNEL (Window 2):
+   cd Downloads  (or where ngrok is)
+   ngrok http 8501
+
+6. GET YOUR PUBLIC LINK:
+   Copy the https://abc123.ngrok.io link
+
+7. SHARE YOUR APP:
+   Send the ngrok.io link to anyone
+
+=================================
+TROUBLESHOOTING:
+=================================
+- Keep both windows OPEN
+- Free link expires after 2 hours
+- If port 8501 busy, use: streamlit run app.py --server.port 8502
+- Then use: ngrok http 8502
+
+=================================
+NOTE:
+=================================
+Your app will be live as long as:
+1. Streamlit window is running
+2. Ngrok window is running
+3. Your computer is on and connected to internet

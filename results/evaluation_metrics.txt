@@ -1,0 +1,7 @@
+Baseline accuracies:
+{
+  "LogisticRegression": 0.6,
+  "DecisionTree": 0.5,
+  "RandomForest": 0.5666666666666667,
+  "SVM": 0.4666666666666667
+}
